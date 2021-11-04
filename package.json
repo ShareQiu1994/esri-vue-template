@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "npm run copy && vue-cli-service serve",
+    "build": "npm run copy && vue-cli-service build",
+    "copy": "ncp ./node_modules/@arcgis/core/assets ./public/assets",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -28,6 +29,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^7.0.0",
+    "ncp": "^2.0.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2"
   },
