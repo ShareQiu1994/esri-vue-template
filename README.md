@@ -1,4 +1,4 @@
-# elee_esri_vue
+# esri-vue-template
 
 ## Project setup
 ```
